@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAF8F2;
+  --foreground: #252321;
+  --ink: #101815;
+  --primary: #183C32;
+  --surface: #F3EEE3;
+  --accent: #B49A62;
+  --muted: #8A877D;
+}
+
+.dark {
+  --background: #0D1210;
+  --foreground: #F5F2E9; /* Lighter ivory for text */
+  --ink: #F5F2E9; /* Ink needs to be light in dark mode since it's used for main text/headings */
+  --primary: #2B6151; /* Lighten the primary green slightly for dark mode contrast */
+  --surface: #131A17;
+  --accent: #B49A62;
+  --muted: #A3A095; /* Lighten muted text slightly for contrast */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-primary: var(--primary);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
+  --font-arabic: var(--font-amiri);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
