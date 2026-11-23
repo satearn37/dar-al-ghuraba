@@ -83,7 +83,7 @@ export default function Home() {
       {/* Featured Collection */}
       <section className="py-24 md:py-32 bg-surface">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-20 border-b border-ink/10 pb-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-20 border-b border-ink/10 pb-8">
             <div>
               <span className="font-sans text-xs uppercase tracking-widest text-accent mb-3 block">Featured</span>
               <h2 className="font-serif text-4xl md:text-5xl font-medium text-ink">

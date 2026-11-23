@@ -46,7 +46,7 @@ export function SortDropdown({ options, defaultValue }: SortDropdownProps) {
       {/* Custom dropdown panel */}
       <div
         className={clsx(
-          "absolute right-0 top-full mt-3 min-w-[200px] bg-surface border border-ink/10 z-50 overflow-hidden transition-all duration-300 origin-top",
+          "absolute right-0 top-full mt-3 min-w-[200px] bg-surface border border-ink/10 z-40 overflow-hidden transition-all duration-300 origin-top",
           isOpen
             ? "opacity-100 scale-y-100 pointer-events-auto"
             : "opacity-0 scale-y-95 pointer-events-none"
